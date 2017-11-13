@@ -2,6 +2,12 @@
 
 Multi-Objective Evolutionary Algorithms implemented in .NET
 
+# Install
+
+```bash
+Install-Package cs-moea -Version 1.0.1
+```
+
 # Features
 
 The following MOEAs are supported:
