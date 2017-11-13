@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MOEA.AlgorithmModels;
 using MOEA.Benchmarks;
+using MOEA.ComponentModels;
 using MOEA.ComponentModels.SolutionModels;
 using MOEA.Core.ComponentModels;
 
@@ -14,14 +15,13 @@ namespace MOEA
     {
         static void Main(string[] args)
         {
-            RunHAPMOEA<ContinuousVector>();
+            RunHAPMOEA();
 
         }
 
-        static void RunGDE3<S>()
-            where S : ContinuousVector, new()
+        static void RunGDE3()
         {
-            GDE3<S> algorithm = new GDE3<S>(new TNKProblem());
+            GDE3<ContinuousVector> algorithm = new GDE3<ContinuousVector>(new TNKProblem());
 
             algorithm.PopulationSize = 100;
 
@@ -34,12 +34,12 @@ namespace MOEA
                 Console.WriteLine("Current Generation: {0}", algorithm.CurrentGeneration);
                 Console.WriteLine("Size of Archive: {0}", algorithm.NondominatedArchiveSize);
             }
+            ContinuousVector finalSolution = algorithm.GlobalBestSolution;
         }
 
-        static void RunHAPMOEA<S>()
-            where S : MOOSolution, new()
+        static void RunHAPMOEA()
         {
-            HAPMOEA<S> algorithm = new HAPMOEA<S>(new NDNDProblem());
+            HAPMOEA<ContinuousVector> algorithm = new HAPMOEA<ContinuousVector>(new NDNDProblem());
 
             algorithm.Config.PopulationSize = 100;
 
@@ -52,12 +52,12 @@ namespace MOEA
                 Console.WriteLine("Current Generation: {0}", algorithm.CurrentGeneration);
                 Console.WriteLine("Size of Archive: {0}", algorithm.NondominatedArchiveSize);
             }
+            NondominatedPopulation<ContinuousVector> paretoFront = algorithm.NondominatedArchive;
         }
 
-        static void RunHybridGame<S>()
-            where S : ContinuousVector, new()
+        static void RunHybridGame()
         {
-            HybridGame<S> algorithm = new HybridGame<S>(new NDNDProblem());
+            HybridGame<ContinuousVector> algorithm = new HybridGame<ContinuousVector>(new NDNDProblem());
 
             algorithm.Config.PopulationSize = 100;
 
@@ -70,12 +70,12 @@ namespace MOEA
                 Console.WriteLine("Current Generation: {0}", algorithm.CurrentGeneration);
                 Console.WriteLine("Size of Archive: {0}", algorithm.NondominatedArchiveSize);
             }
+            NondominatedPopulation<ContinuousVector> paretoFront = algorithm.NondominatedArchive;
         }
 
-        static void RunNSGAII<S>()
-            where S : MOOSolution, new()
+        static void RunNSGAII()
         {
-            NSGAII<S> algorithm = new NSGAII<S>(new NDNDProblem());
+            NSGAII<ContinuousVector> algorithm = new NSGAII<ContinuousVector>(new NDNDProblem());
 
             algorithm.PopulationSize = 100;
 
@@ -87,6 +87,7 @@ namespace MOEA
                 Console.WriteLine("Current Generation: {0}", algorithm.CurrentGeneration);
                 Console.WriteLine("Size of Archive: {0}", algorithm.NondominatedArchiveSize);
             }
+            ContinuousVector finalSolution = algorithm.GlobalBestSolution;
         }
     }
 }
