@@ -1,0 +1,10 @@
+obj/
+bin/
+
+*/obj/
+*/bin/
+
+*.user
+
+packages
+

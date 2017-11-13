@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>cs-moea</id>
+    <version>1.0.1</version>
+    <authors>chen0040</authors>
+    <owners>chen0040</owners>
+    <licenseUrl>https://github.com/chen0040/cs-moea/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/chen0040/cs-moea</projectUrl>
+    <iconUrl>https://rawgit.com/chen0040/cs-moea/master/icon.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Multi-Objective Evolutionary Algorithms</description>
+    <releaseNotes>Multi-Objective Evolutionary Algorithms in .NET 4.5.2</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Multi-Objective Evolutionary Algorithms, MOEAD, MOEA, NSGA-II, GDE-3, HAP-MOEA, Hyrid-Game, Optimization, Meta-Heuristic, MetaHeuristic, c-sharp</tags>
+    <dependencies>
+      
+    </dependencies>
+  </metadata>
+</package>
