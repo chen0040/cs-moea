@@ -24,7 +24,16 @@ The library supports both multi-objective and multi-constraints optimization pro
 
 Please refer to the sample codes in the cs-moea-samples project for how to use the library to solve various optimization problems. 
 
-The cs-moea-samples-gui-winforms project shows the demo of the multi-objective optimization using these algorithm with a GUI that shows the pareto front of the MOEA results.
+The cs-moea-samples-gui-winforms project shows the demo of the multi-objective optimization using these algorithm with a GUI that shows the pareto front of the MOEA results. A number of benchmarks
+are included for comparing various MOEA implementations:
+
+* NDND
+* NGPD
+* TNK
+* OKA2
+* SYMPART
+
+The details these implementations can be found in MOEA.Benchmarks namespace of the cs-moea project.
 
 The section below provides some details on how to do this using various MOEAs.
 
