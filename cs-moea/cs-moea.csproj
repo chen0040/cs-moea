@@ -61,6 +61,11 @@
     <Compile Include="AlgorithmModels\NSGAII.cs" />
     <Compile Include="AlgorithmModels\PopInit\MOOPopInitInstructionFactory.cs" />
     <Compile Include="AlgorithmModels\PopInit\PopInitInstruction_Random.cs" />
+    <Compile Include="Benchmarks\NDNDProblem.cs" />
+    <Compile Include="Benchmarks\NGPDProblem.cs" />
+    <Compile Include="Benchmarks\OKA2Problem.cs" />
+    <Compile Include="Benchmarks\SYMPARTProblem.cs" />
+    <Compile Include="Benchmarks\TNKProblem.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ComponentModels\CompareUtil.cs" />
     <Compile Include="ComponentModels\EpsilonBoxDominanceArchive.cs" />
