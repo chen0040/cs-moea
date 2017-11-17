@@ -66,7 +66,6 @@
     <Compile Include="Benchmarks\OKA2Problem.cs" />
     <Compile Include="Benchmarks\SYMPARTProblem.cs" />
     <Compile Include="Benchmarks\TNKProblem.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="ComponentModels\CompareUtil.cs" />
     <Compile Include="ComponentModels\EpsilonBoxDominanceArchive.cs" />
     <Compile Include="ComponentModels\HAPMOEALayer.cs" />
