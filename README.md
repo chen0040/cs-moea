@@ -5,8 +5,7 @@ Multi-Objective Evolutionary Algorithms implemented in .NET
 # Install
 
 ```bash
-Install-Package cs-statistics -Version 1.0.2
-Install-Package cs-moea -Version 1.0.1
+Install-Package cs-moea -Version 1.0.2
 ```
 
 # Features
